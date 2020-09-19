@@ -1,0 +1,82 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Interactable",
+"class": "Bomb",
+"language": "GDScript",
+"path": "res://actors/bomb/Bomb.gd"
+}, {
+"base": "Interactable",
+"class": "Cake",
+"language": "GDScript",
+"path": "res://actors/cake/Cake.gd"
+}, {
+"base": "Node",
+"class": "Game",
+"language": "GDScript",
+"path": "res://singletons/game/Game.gd"
+}, {
+"base": "RigidBody",
+"class": "Interactable",
+"language": "GDScript",
+"path": "res://actors/Interactable.gd"
+}, {
+"base": "Line2D",
+"class": "Knife",
+"language": "GDScript",
+"path": "res://actors/knife/Knife.gd"
+}, {
+"base": "Node",
+"class": "Main",
+"language": "GDScript",
+"path": "res://Main.gd"
+}, {
+"base": "Control",
+"class": "UI",
+"language": "GDScript",
+"path": "res://ui/UI.gd"
+} ]
+_global_script_class_icons={
+"Bomb": "",
+"Cake": "",
+"Game": "",
+"Interactable": "",
+"Knife": "",
+"Main": "",
+"UI": ""
+}
+
+[application]
+
+config/name="it's all cake"
+run/main_scene="res://Main.tscn"
+boot_splash/image="res://ui/splash.png"
+config/icon="res://icon.png"
+
+[autoload]
+
+game="*res://singletons/game/Game.tscn"
+
+[debug]
+
+shapes/collision/shape_color=Color( 0, 0.6, 0.701961, 1 )
+
+[input_devices]
+
+pointing/emulate_touch_from_mouse=true
+pointing/emulate_mouse_from_touch=false
+
+[rendering]
+
+quality/driver/driver_name="GLES2"
+vram_compression/import_etc=true
+vram_compression/import_etc2=false
+environment/default_environment="res://default_env.tres"

@@ -1,0 +1,19 @@
+[gd_resource type="DynamicFont" load_steps=3 format=2]
+
+[ext_resource path="res://ui/font/gomarice_no_continue.ttf" type="DynamicFontData" id=1]
+
+[sub_resource type="GDScript" id=1]
+script/source = "extends DynamicFont
+
+onready var original_size = size
+
+const original_height = 600
+
+func set_font_size(size):
+	set_size(original_size*size/original_height)
+"
+
+[resource]
+size = 60
+font_data = ExtResource( 1 )
+script = SubResource( 1 )

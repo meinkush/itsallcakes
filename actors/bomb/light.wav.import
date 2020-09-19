@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/light.wav-3f49558616309982811368e11964ecec.sample"
+
+[deps]
+
+source_file="res://actors/bomb/light.wav"
+dest_files=[ "res://.import/light.wav-3f49558616309982811368e11964ecec.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

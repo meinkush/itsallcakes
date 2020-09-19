@@ -1,0 +1,44 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://actors/cake/Cake.gd" type="Script" id=1]
+[ext_resource path="res://actors/cake/slice.wav" type="AudioStream" id=2]
+[ext_resource path="res://actors/cake/meriengue/meringue.png" type="Texture" id=3]
+[ext_resource path="res://actors/cake/woosh.wav" type="AudioStream" id=4]
+
+
+[sub_resource type="Curve" id=1]
+_data = [ Vector2( 0, 0 ), 0.0, 0.0, 0, 0, Vector2( 0.207407, 0.331818 ), 0.0, 0.0, 0, 0, Vector2( 0.755556, 0.113636 ), 0.0, 0.0, 0, 0 ]
+
+[node name="Cake" type="RigidBody" groups=[
+"interactable",
+]]
+collision_layer = 2147483649
+collision_mask = 0
+mass = 0.510204
+axis_lock_linear_z = true
+script = ExtResource( 1 )
+
+[node name="Tween" type="Tween" parent="."]
+
+[node name="Slice" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 2 )
+
+[node name="TweenRotation" type="Tween" parent="."]
+
+[node name="Whoosh" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+
+[node name="Meringue" type="CPUParticles2D" parent="."]
+rotation = 0.264805
+emitting = false
+lifetime = 0.5
+one_shot = true
+explosiveness = 0.74
+texture = ExtResource( 3 )
+initial_velocity = 184.39
+initial_velocity_random = 1.0
+angular_velocity = -204.26
+angular_velocity_random = 0.38
+angle = 25.5
+angle_random = 1.0
+scale_amount_curve = SubResource( 1 )
