@@ -5,7 +5,6 @@
 [ext_resource path="res://actors/cake/meriengue/meringue.png" type="Texture" id=3]
 [ext_resource path="res://actors/cake/woosh.wav" type="AudioStream" id=4]
 
-
 [sub_resource type="Curve" id=1]
 _data = [ Vector2( 0, 0 ), 0.0, 0.0, 0, 0, Vector2( 0.207407, 0.331818 ), 0.0, 0.0, 0, 0, Vector2( 0.755556, 0.113636 ), 0.0, 0.0, 0, 0 ]
 
@@ -14,7 +13,7 @@ _data = [ Vector2( 0, 0 ), 0.0, 0.0, 0, 0, Vector2( 0.207407, 0.331818 ), 0.0, 0
 ]]
 collision_layer = 2147483649
 collision_mask = 0
-mass = 0.510204
+mass = 0.976531
 axis_lock_linear_z = true
 script = ExtResource( 1 )
 

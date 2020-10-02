@@ -45,7 +45,7 @@ func spawn_cake() -> void:
 		current_layer = wrapi(current_layer - 1, 1, layers)
 		new_cake.layer = current_layer
 		new_cake.translation = Vector3(x_position, margins['bottom'] - 1, 1)
-		new_cake.apply_central_impulse(Vector3(0,rand_range(margins['top']*0.8,margins['top']*1.1),0).rotated(Vector3(0,0,1),launch_angle))
+		new_cake.apply_central_impulse(Vector3(0,rand_range(margins['top']*1.8,margins['top']*2.6),0).rotated(Vector3(0,0,1),launch_angle))
 		add_child(new_cake)
 		new_cake.connect('sliced', $UI, 'add_score')
 		new_cake.connect('uncut' , $UI, 'miss')

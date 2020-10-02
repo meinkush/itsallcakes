@@ -39,7 +39,7 @@ size = Vector2( 0.1, 0.3 )
 "interactable",
 ]]
 collision_mask = 0
-mass = 0.51
+mass = 0.976531
 script = ExtResource( 1 )
 
 [node name="CollisionShape" type="CollisionShape" parent="."]

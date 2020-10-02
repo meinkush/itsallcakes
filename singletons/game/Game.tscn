@@ -1,9 +1,10 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://singletons/game/Game.gd" type="Script" id=1]
 [ext_resource path="res://actors/cake/paper.tscn" type="PackedScene" id=2]
 [ext_resource path="res://actors/cake/milk.tscn" type="PackedScene" id=3]
+[ext_resource path="res://actors/cake/shoe/shoe.tscn" type="PackedScene" id=4]
 
 [node name="Game" type="Node"]
 script = ExtResource( 1 )
-cakes = [ ExtResource( 2 ), ExtResource( 3 ) ]
+cakes = [ ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ) ]
